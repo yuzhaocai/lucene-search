@@ -39,46 +39,37 @@ public class Post implements Searchable {
 		this.body = body;
 	}
 
-	@Override
 	public int compareTo(Searchable o) {
 		return 0;
 	}
 
-	@Override
 	public long getId() {
 		return id;
 	}
 
-	@Override
 	public void setId(long id) {
 		this.id = id;
 	}
 
-	@Override
 	public List<String> storeFields() {
 		return Arrays.asList("title");
 	}
 
-	@Override
 	public List<String> indexFields() {
 		return Arrays.asList("title","body");
 	}
 
-	@Override
 	public Map<String, String> extendStoreDatas() {
 		return null;
 	}
 
-	@Override
 	public Map<String, String> extendIndexDatas() {
 		return null;
 	}
 
-	@Override
 	public List<? extends Searchable> listAfter(long id, int count) {
 		return null;
 	}
-	@Override
 	public float boost() {
 		return 1.0f;
 	}
