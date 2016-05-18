@@ -15,6 +15,8 @@ public class Post implements Searchable {
 	private long id;
 	private String title;
 	private String body;
+	
+	private String test;
 		
 	public Post(){}
 	public Post(long id, String t, String b){
