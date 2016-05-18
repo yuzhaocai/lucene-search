@@ -73,4 +73,7 @@ public class Post implements Searchable {
 	public float boost() {
 		return 1.0f;
 	}
+	public void setTest(String test){
+		
+	}
 }
